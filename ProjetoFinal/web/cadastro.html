@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link href="css/estilo_cadastro.css" rel="stylesheet" type="text/css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Cadastro</title>
+</head>
+
+<body> 
+   
+    <header>
+        <img src="img/logo_mecha.png" alt="Logo" /> 
+        <div>
+            <h4> CNPJ: 08.000.072/0000-67 </h4>
+            <h4> Endereço: Rua Brasil, 1012 </h4>
+            <h4> Telefone: (51)91234-5678 </h4>
+        </div>
+        
+    </header>
+
+    <form action="#">
+        <h1>Preencha os Campos:</h1>
+
+        <label>Número do Pedido:
+            <input class="input_text" type="text" name="n_pedido" required>
+        </label>
+
+        <label >Nome:
+            <input class="input_text" type="text" name="n_nome">
+        </label>
+
+        <label >CPF:
+            <input class="input_text" type="number" name="n_cpf" required>
+        </label>
+
+        <label >Telefone:
+            <input class="input_text" type="tel" name="n_telefone" required>
+        </label>
+
+        <label >Carro:
+            <input class="input_text" type="text" name="n_carro" required>
+        </label>
+
+        <label >Placa:
+            <input class="input_text" type="text" name="n_placa" required>
+        </label>
+
+        <label>Descrição do problema:
+            <input class="input_text" type="text" name="n_descricao" required>
+        </label>
+
+        <label>Observações:
+            <input class="input_text" type="text" name="n_observacoes">
+        </label>
+
+        <div id="pago">
+            Já foi pago?
+            <input type="radio" name="pago" value="sim" id="sim"><label for="sim"> Sim</label>
+            <input type="radio" name="pago" value="nao" id="nao"><label for="nao"> Não</label>
+        </div>
+
+        <input id="btn_cadastrar" type="submit" value="Cadastrar">
+        <input id="btn_cancelar" type="reset" value="Cancelar">
+    </form>
+
+</body>
+
+</html>
