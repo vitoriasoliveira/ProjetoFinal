@@ -40,10 +40,6 @@ label {
     box-sizing: border-box;
 }
 
-#pago {
-    margin-top: 20px;
-    margin-bottom: 25px;
-}
 
 #btn_cadastrar,#btn_cancelar {
     cursor: pointer;
